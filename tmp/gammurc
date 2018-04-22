@@ -1,0 +1,13 @@
+[gammu]
+port = /dev/ttyUSB2
+#model = 6110
+connection = at19200
+#synchronizetime = yes
+#logfile = gammulog
+#logformat = textall
+#use_locking = yes
+#gammuloc = locfile
+#startinfo = yes
+#gammucoding = utf8
+#rsslevel = teststable
+#usephonedb = yes

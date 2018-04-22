@@ -1,0 +1,39 @@
+# Configuration file for Gammu SMS Daemon
+
+# Gammu library configuration, see gammurc(5)
+[gammu]
+# Please configure this!
+port = /dev/ttyUSB2
+#model = 6110
+connection = at19200
+#synchronizetime = yes
+#logfile = gammulog
+#logformat = textall
+#use_locking = yes
+#gammuloc = locfile
+#startinfo = yes
+#gammucoding = utf8
+#rsslevel = teststable
+#usephonedb = yes
+
+# SMSD configuration, see gammu-smsdrc(5)
+[smsd]
+service = mysql
+#logfile = smsdlog
+
+# Increase for debugging information
+debuglevel = 0
+
+
+# Database backends congfiguration
+user = biasawae
+password = biasawae
+pc = localhost
+database = sms_biasawae
+
+
+# Paths where messages are stored
+inboxpath = /var/spool/gammu/inbox/
+outboxpath = /var/spool/gammu/outbox/
+sentsmspath = /var/spool/gammu/sent/
+errorsmspath = /var/spool/gammu/error/
