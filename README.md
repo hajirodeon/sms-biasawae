@@ -1,2 +1,82 @@
 # sms-biasawae
 sms-biasawae
+
+
+BACA DULU YA...
+=========================================================================================
+Pastikan Anda telah install GAMMU, sebagai SMS Server-nya/Gateway.
+Disini SMS BIASAWAE hanyalah berfungsi sebagai tampilan/interface saja,
+	dalam memudahkan pengelolaan SMS.
+
+Asal mula pembuatan SMS BIASAWAE ini, adalah karena kerjaan iseng,
+	saat sedang mengembangkan SISFOKOL v4.0, yang akan rilis akhir 2011.
+	walaupun sangat sederhana, lumayan bisa untuk belajar.
+
+SMS BIASAWAE v0.1, dikembangkan oleh Agus Muhajir.
+
+
+
+
+
+Cara Instalasi
+=========================================================================================
+1. pastikan GAMMU telah terpasang di komputer anda.
+	jika belum ada, anda bisa download terlebih dahulu dari :
+		http://wammu.eu/gammu/
+
+2. disini kita membutuhkan webserver, dengan adanya : Apache, PHP, dan MySQL,
+	serta PhpMyAdmin.
+
+3. salin source web ini, ke folder web anda.
+
+4. lakukan dump sql/import database, yang ada di folder '/db' ini, menggunakan phpmyadmin.
+	setelah kita membuat database 'sms_biasawae'.
+
+5. lakukan edit konfigurasi, pada file '/inc/config.php'.
+
+6. bila sudah benar, silahkan restart webserver. dan jalankan browser.
+	biasanya dengan alamat :
+		http://localhost/
+
+7. lakukan uji coba perangkat USB Modem. yang didalamnya telah berada SIMCARD
+	dengan sudah ada pulsanya.
+
+8. jalankan perintah berikut,
+	#gammu identify
+
+9. jika berhasil, maka akan terlihat informasi tentang koneksi ke perangkat
+	dan informasi lainnya seputar modem-nya.
+
+10. lakukan edit konfigurasi.
+	jika anda menggunakan LinuxBIASAWAE, maka akan terdapat beberapa file berikut di folder '/etc' :
+		-> gammu-smsdrc
+		-> gammurc
+		-> smsdrc
+
+	(nb.contoh file ini, juga ada di folder /tmp).
+
+
+11. bila sudah benar, silahkan jalankan service GAMMU-SMSD.
+
+12. lalu kemudian, jalankan browser kembali. maka SMS BIASAWAE sudah bisa kita gunakan.
+
+13. selamat mencoba.
+=========================================================================================
+
+
+
+
+
+AKSES
+=========================================================================================
+username : admin
+password : admin
+
+
+untuk mendaftarkan nomor hp,
+	REG#nisnya#namanya
+=========================================================================================
+
+
+
+
